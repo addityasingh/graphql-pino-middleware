@@ -1,0 +1,72 @@
+{
+  "name": "graphql-pino-middleware",
+  "version": "0.0.1",
+  "description": "GraphQL middleware to instrument resolvers with pino logger",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "format": "prettier --no-config --write 'src/**/*.ts'",
+    "check-format": "prettier --no-config -l 'src/**/*.ts'",
+    "lint": "tslint --project .",
+    "lint-fix": "tslint --project . --fix",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "author": "Aditya Pratap Singh<adisinghrajput@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.2",
+    "@types/pino": "^5.15.3",
+    "husky": "^2.3.0",
+    "jest": "^24.7.1",
+    "lint-staged": "^8.1.5",
+    "nock": "^10.0.6",
+    "prettier": "^1.16.4",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.15.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.4.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "testEnvironment": "node",
+    "testRegex": "(/tests/.*|(\\.|/)test)\\.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.ts": [
+        "tslint -p tsconfig.json --fix",
+        "prettier --no-config --write",
+        "git add"
+      ],
+      "*.{js,md,json,yaml,yml}": [
+        "prettier --no-config --write",
+        "git add"
+      ]
+    }
+  },
+  "dependencies": {
+    "graphql": "^14.5.8",
+    "graphql-middleware": "^4.0.2",
+    "graphql-tools": "^4.0.6",
+    "pino": "^5.16.0"
+  }
+}
