@@ -2,7 +2,7 @@
   "name": "graphql-pino-middleware",
   "version": "0.0.1",
   "description": "GraphQL middleware to instrument resolvers with pino logger",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "precommit": "lint-staged",
     "format": "prettier --no-config --write 'src/**/*.ts'",
