@@ -116,4 +116,4 @@ Please check issues labeled [#good-first-issues](https://github.com/addityasingh
 
 ## Licence
 
-`graphql-pino-middleware` uses [MIT Licence](./LICENCE)
+`graphql-pino-middleware` uses [MIT License](./LICENSE)
