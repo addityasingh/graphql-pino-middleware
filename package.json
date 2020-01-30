@@ -52,7 +52,7 @@
   },
   "lint-staged": {
     "linters": {
-      "*.ts": [
+      "src/*.ts": [
         "tslint -p tsconfig.json --fix",
         "prettier --no-config --write",
         "git add"
@@ -66,7 +66,6 @@
   "dependencies": {
     "graphql": "^14.5.8",
     "graphql-middleware": "^4.0.2",
-    "graphql-tools": "^4.0.6",
     "pino": "^5.16.0"
   }
 }
