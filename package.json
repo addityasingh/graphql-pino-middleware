@@ -1,6 +1,6 @@
 {
   "name": "graphql-pino-middleware",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "GraphQL middleware to instrument resolvers with pino logger",
   "main": "dist/index.js",
   "scripts": {
