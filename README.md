@@ -1,6 +1,13 @@
 # graphql-pino-middleware 🚀
 
+[![NPM](https://nodei.co/npm/graphql-pino-middleware.png)](https://npmjs.org/package/graphql-pino-middleware)
+
 GraphQL middleware to instrument resolvers with pino logger. This middleware intends to remove cross-cutting concerns from the application by providing logger in the resolver context.
+
+![Publish](https://github.com/addityasingh/graphql-pino-middleware/workflows/Publish/badge.svg)
+[![downloads](https://img.shields.io/npm/dt/graphql-pino-middleware.svg)](https://npmjs.org/package/graphql-pino-middleware?cacheSeconds=3600)
+[![version](https://img.shields.io/npm/v/graphql-pino-middleware.svg)](https://npmjs.org/package/graphql-pino-middleware?cacheSeconds=3600)
+
 
 ## Table of contents
 
