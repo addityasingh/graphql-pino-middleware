@@ -2,7 +2,7 @@ import express from "express";
 import { applyMiddleware } from "graphql-middleware";
 import { makeExecutableSchema } from 'graphql-tools';
 const graphqlExpressHttp = require("express-graphql");
-import graphqlPinoMiddleware from "../../dist/index.js";
+import graphqlPinoMiddleware from 'graphql-pino-middleware';
 
 // Construct a schema, using GraphQL schema language
 const typeDefs = `
